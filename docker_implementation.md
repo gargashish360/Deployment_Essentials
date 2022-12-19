@@ -21,11 +21,11 @@
 				
 		docker-compose.yaml: If you want to run several services and check their interactions.
 				
-		requirements.in: Contains all the requirement libraries.
+		requirements.in: Contains all the requirement libraries.\
 				
 * Put all the code need to be implemented under the src folder.\
 
-* Write the Makefile.
+* Write the Makefile.\
 	Makefile:
 	export BASE_IMAGE := neo-docker-releases.repo.lab.pl.alcatel-lucent.com/ubi-python-minimal
 	export BASE_IMAGE_TAG := 3.9-ubi9
