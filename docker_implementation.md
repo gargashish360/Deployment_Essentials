@@ -29,16 +29,16 @@
    export BASE_IMAGE_TAG := 3.9-ubi9  
    .PHONY: compile-deps  
     compile-deps:  
-    	pip-compile docker/requirements.in  
+    		pip-compile docker/requirements.in  
    .PHONY: build  
    build:  
    	docker build --pull -f docker/Dockerfile -t cm-parameter-grouping --build-arg baseImage=$(BASE_IMAGE) --build-arg baseImageTag=$(BASE_IMAGE_TAG) .  
    .PHONY: service-start  
    service-start:  
-   	   docker run --name cm_parameter_grouping_contrainer -d cm-parameter-grouping  
+   	docker run --name cm_parameter_grouping_contrainer -d cm-parameter-grouping  
    .PHONY: logs  
    logs:  
-	docker logs -f cm_parameter_grouping_contrainer
+   	docker logs -f cm_parameter_grouping_contrainer
 	
   
    
