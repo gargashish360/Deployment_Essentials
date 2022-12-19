@@ -2,7 +2,7 @@
 
 * Seperate all the parameters, variables/ constants under seperate conf folder(Make yaml files).
 * Place all the relevant data under data folder.
-* Place docker files under docker folder:
+* Place docker files under docker folder:__
           --> Structuring a basic docker folder:
 				Dockerfile:
 				ARG baseImage
