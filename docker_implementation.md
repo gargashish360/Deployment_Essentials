@@ -3,7 +3,6 @@
 * Seperate all the parameters, variables/ constants under seperate conf folder(Make yaml files).
 * Place all the relevant data under data folder.
 * Place docker files under docker folder:\
-      -->Structuring a basic docker folder:\
 				Dockerfile:\
 				ARG baseImage\
 				ARG baseImageTag\
@@ -23,7 +22,9 @@
 				docker-compose.yaml: If you want to run several services and check their interactions.\
 				
 				requirements.in: Contains all the requirement libraries.\
-* Put all the code need to be implemented under the src folder.
+				
+* Put all the code need to be implemented under the src folder.\
+
 * Write the Makefile.
 	Makefile:
 	export BASE_IMAGE := neo-docker-releases.repo.lab.pl.alcatel-lucent.com/ubi-python-minimal
