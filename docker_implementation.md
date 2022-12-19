@@ -15,13 +15,13 @@
 				COPY data /app/data\
 				COPY conf /app/conf
 				COPY arm-go /app/conf\
-				CMD ["python", "/app/src/main.py"]\
+				CMD ["python", "/app/src/main.py"]
 				
-				prometheus& grafana: To collect the system metrics.\
+		prometheus& grafana: To collect the system metrics.
 				
-				docker-compose.yaml: If you want to run several services and check their interactions.\
+		docker-compose.yaml: If you want to run several services and check their interactions.
 				
-				requirements.in: Contains all the requirement libraries.\
+		requirements.in: Contains all the requirement libraries.
 				
 * Put all the code need to be implemented under the src folder.\
 
